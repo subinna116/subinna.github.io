@@ -7,16 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I'm Subin Na. I'm a mental health social worker and social work
-researcher at the **School of Social Policy & Practice, University of
-Pennsylvania**. My work bridges clinical practice and computational
-social science.
+I am a third-year PhD student in Social Welfare at the University of Pennsylvania's School of Social Policy & Practice. I study how mental health systems can better serve people in recovery, with a particular focus on the peer support workforce, mental health equity for Asian and immigrant communities, and the design of crisis care systems.
 
-[여기에 본인 연구 소개 단락 자유롭게 추가]
+My interest in the gap between recovery values and everyday practice began in Korea, where I trained in mental health social work and first encountered how much institutional context shapes what care actually looks like. I am drawn to questions of equity and justice in mental health systems, particularly how structural and organizational factors reproduce or challenge disparities for marginalized communities. I approach these questions using quantitative and computational methods, including natural language processing, machine learning, and multilevel modeling, with the goal of producing evidence that is rigorous, interpretable, and useful to those working to change systems.
 
-> "Social scientific research is and always will be tentative and imperfect
-> ... But by patiently searching for facts and patterns and calmly analyzing
-> the economic, social, and political mechanisms that might explain them,
-> it can inform democratic debate and focus attention on the right questions."
+When I am not working, I enjoy jogging, spending time at dog parks, playing board games, and cheering on the Philadelphia 76ers. Go Sixers!🏀
+
+A passage I return to often:
+
+> "Social scientific research is and always will be tentative and imperfect. But by patiently searching for facts and patterns and calmly analyzing the economic, social, and political mechanisms that might explain them, it can inform democratic debate and focus attention on the right questions."
 >
 > — Thomas Piketty, *Capital in the Twenty-First Century*
