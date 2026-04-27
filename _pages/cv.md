@@ -1,64 +1,40 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<p style="margin-bottom: 1.5em; font-size: 1.05em;">
+  My full CV is available as a PDF.
+</p>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+<a href="{{ base_path }}/files/cv_1.pdf" class="cv-button" target="_blank">
+  📄 Download CV (PDF)
+</a>
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+<p style="margin-top: 2em; color: #666; font-size: 0.9em;">
+  Last updated: March 2026
+</p>
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+<style>
+  .cv-button {
+    display: inline-block;
+    background-color: #011F5B;
+    color: #ffffff !important;
+    padding: 12px 28px;
+    border-radius: 4px;
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+    border: 2px solid #011F5B;
+  }
+  .cv-button:hover {
+    background-color: #ffffff;
+    color: #011F5B !important;
+    text-decoration: none !important;
+  }
+</style>
