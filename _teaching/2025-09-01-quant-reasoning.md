@@ -1,5 +1,5 @@
 ---
-title: "Quantitative Methods Lab"
+title: "Quantitative Methods"
 collection: teaching
 category: penn
 type: "Graduate course"
