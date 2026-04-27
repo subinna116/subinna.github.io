@@ -7,6 +7,92 @@ author_profile: true
 
 {% include base_path %}
 
+<div class="teaching-intro">
+  <p>I have served as a teaching assistant and lab instructor for graduate-level courses in machine learning and quantitative methods at the University of Pennsylvania, and for undergraduate courses in social work practice at Seoul National University. My teaching emphasizes connecting quantitative reasoning and applied methods to social work and mental health research, and supporting students as they develop both analytical skills and applied judgment.</p>
+</div>
+
+{% assign penn_count = 0 %}
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% if post.category == "penn" %}{% assign penn_count = penn_count | plus: 1 %}{% endif %}
 {% endfor %}
+
+{% if penn_count > 0 %}
+  <h2 class="teaching-category">University of Pennsylvania</h2>
+  {% assign idx = 0 %}
+  {% for post in site.teaching reversed %}
+    {% if post.category != "penn" %}{% continue %}{% endif %}
+    {% assign idx = idx | plus: 1 %}
+    <div class="teaching-entry">
+      <p class="teaching-line">
+        <span class="teaching-number">{{ idx }}.</span>
+        <span class="teaching-title"><b>{{ post.title }}</b></span>
+        <span class="teaching-meta">{{ post.role }}{% if post.instructor %} (Instructor: {{ post.instructor }}){% endif %} · {{ post.venue }}{% if post.date %} · {{ post.date | date: "%B %Y" }}{% endif %}</span>
+      </p>
+      {% if post.description %}<p class="teaching-desc">{{ post.description }}</p>{% endif %}
+    </div>
+  {% endfor %}
+{% endif %}
+
+{% assign snu_count = 0 %}
+{% for post in site.teaching reversed %}
+  {% if post.category == "snu" %}{% assign snu_count = snu_count | plus: 1 %}{% endif %}
+{% endfor %}
+
+{% if snu_count > 0 %}
+  <h2 class="teaching-category">Seoul National University</h2>
+  {% assign idx = 0 %}
+  {% for post in site.teaching reversed %}
+    {% if post.category != "snu" %}{% continue %}{% endif %}
+    {% assign idx = idx | plus: 1 %}
+    <div class="teaching-entry">
+      <p class="teaching-line">
+        <span class="teaching-number">{{ idx }}.</span>
+        <span class="teaching-title"><b>{{ post.title }}</b></span>
+        <span class="teaching-meta">{{ post.role }}{% if post.instructor %} (Instructor: {{ post.instructor }}){% endif %} · {{ post.venue }}{% if post.date %} · {{ post.date | date: "%B %Y" }}{% endif %}</span>
+      </p>
+      {% if post.description %}<p class="teaching-desc">{{ post.description }}</p>{% endif %}
+    </div>
+  {% endfor %}
+{% endif %}
+
+<style>
+  .teaching-intro {
+    margin-bottom: 2.5em;
+    line-height: 1.7;
+  }
+  h2.teaching-category {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #333;
+    font-size: 1.4em;
+  }
+  .teaching-entry {
+    margin-bottom: 1.6em;
+  }
+  .teaching-line {
+    margin-bottom: 0.3em;
+    line-height: 1.6;
+    padding-left: 2.2em;
+    text-indent: -2.2em;
+  }
+  .teaching-number {
+    font-weight: 600;
+    color: #555;
+    margin-right: 0.5em;
+  }
+  .teaching-title {
+    color: #222;
+  }
+  .teaching-meta {
+    color: #666;
+    font-size: 0.95em;
+  }
+  .teaching-desc {
+    margin-left: 2.2em;
+    margin-top: 0.3em;
+    color: #444;
+    font-size: 0.95em;
+    line-height: 1.55;
+  }
+</style>
